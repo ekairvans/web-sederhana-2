@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Registrasi</title>
+	
+	<style type="text/css">
+		body{
+			background-color: #f2a331;
+			text-align: center;
+			font-family: comic sans ms;
+			padding-top: 200px;
+		}
+		h1{
+			color: #804b00;
+		}
+		a{
+			text-decoration: none;
+			color: #804b00;
+		}
+		.layer1{
+			background-color: #eee;
+			width: 350px;
+			padding: 20px;
+			margin: auto;
+			box-shadow: 25px 25px 25px #804b00;
+		}
+		.layer2{
+			padding: 5px;
+		}
+		input[type="text"], input[type="password"], input[type="email"]{
+			padding: 15px;
+			width: 100%;
+			outline: none;
+			border: none;
+			font-size: 16px;
+			color: #aaa;
+			box-sizing: border-box;
+			font-family: comic sans ms;
+		}
+		
+		input[type="submit"]{
+			padding: 15PX;
+			width: 100%;
+			cursor: pointer;
+			outline: none;
+			border: none;
+			background-color: #804b00;
+			color: #fff;
+			box-sizing: border-box;
+			font-family: comic sans ms;
+		}
+		#msg{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="layer1">
+		<div>
+			<h1>Registrasi</h1>
+		</div>
+		<div class="layer2">
+			<input type="text" name="user" placeholder="Username">
+		</div>
+		<div class="layer2">
+			<input type="password" name="" placeholder="Password" id="password">
+		</div>
+		<div class="layer2">
+			<input type="password" name="" placeholder="Verifikasi Password" oninput="repassword(this.value)">
+			<br><br>
+			<span id="msg">kata sandi<b><span id="verifikasi"></span></b></span>
+		</div>
+		<div class="layer2">
+			<input type="email" name="mail" placeholder="Email">
+		</div>
+		<div class="layer2">
+			<tr>
+				<td>
+					Gender :
+				</td>
+				<td>
+					<input type="radio" name="Gender">Male
+					<input type="radio" name="Gender">Famale
+				</td>
+			</tr>
+		</div>
+		
+		<div class="layer2">
+			<input type="submit" name="pass" value="Registrasi">
+		</div>
+
+	<!-- <form>
+		<table>
+
+			<tr>
+				<td>
+					Phone :
+				</td>
+				<td>
+					<select>
+						<option>+62</option>
+						<option>+60</option>
+						<option>+61</option>
+						<option>+63</option>
+					</select>
+					<input type="Phone" placeholder="82126****" name="">
+				</td>
+			</tr>
+
+
+		</table>
+	</form> -->
+</div>
+
+</body>
+<script type="text/javascript">
+		function repassword(a){
+			var pass = document.getElementById("passwords").value
+			var msg = document.getElementById("msg")
+			var ver = document.getElementById("verifikasi")
+			document.getElementById("msg").style.display = 'block'
+			if (pass == a) {
+				ver.style.color = 'green'
+				ver.innerHTML = 'benar'
+			}else {
+				ver.style.color = 'red'
+				ver.innerHTML = 'salah'
+			}
+		}
+	</script>
+</html>

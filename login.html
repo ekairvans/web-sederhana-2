@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Login</title>
+	<style type="text/css">
+		body{
+			background-color: #f2a331;
+			text-align: center;
+			font-family: comic sans ms;
+			padding-top: 200px;
+		}
+		h1{
+			color: #804b00;
+		}
+		a{
+			text-decoration: none;
+			color: #804b00;
+		}
+		.layer1{
+			background-color: #eee;
+			width: 350px;
+			padding: 20px;
+			margin: auto;
+			box-shadow: 25px 25px 25px #804b00;
+		}
+		.layer2{
+			padding: 5px;
+		}
+		input[type="text"], input[type="password"]{
+			padding: 15px;
+			width: 100%;
+			outline: none;
+			border: none;
+			font-size: 16px;
+			color: #aaa;
+			box-sizing: border-box;
+			font-family: comic sans ms;
+		}
+		
+		input[type="submit"]{
+			padding: 15PX;
+			width: 100%;
+			cursor: pointer;
+			outline: none;
+			border: none;
+			background-color: #804b00;
+			color: #fff;
+			box-sizing: border-box;
+			font-family: comic sans ms;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="registrasi.html">
+	<div class="layer1">
+		<div>
+			<h1>Login</h1>
+		</div>
+		<div class="layer2">
+			<input type="text" name="user" placeholder="Username">
+		</div>
+		<div class="layer2">
+			<input type="password" name="pass" placeholder="Password">
+		</div>
+	
+		<div class="layer2">
+			<input type="submit" name="pass" value="Login">
+		</div>
+	
+		<div class="layer2">
+			<input type="submit" name="pass" value="Registrasi">
+		</div>
+		<div class="layer2">
+			<p><a href=""><i>Forget Password ?</i></a></p>
+		</div>
+
+	</div>
+</form>
+</body>
+</html>
