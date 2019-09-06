@@ -69,7 +69,7 @@
 		</div>
 	
 		<div class="layer2">
-			<input type="submit" name="pass" value="Registrasi">
+			<input type="submit" name="pass" value="Registrasi" onclick="registrasi()">
 		</div>
 		<div class="layer2">
 			<p><a href=""><i>Forget Password ?</i></a></p>
@@ -85,7 +85,7 @@
 		var password = document.getElementById("password").value
 		if (username == "mamas" && password == "123456") {
 			alert("Login Sukses")
-			window.location = "registrasi.html"
+			window.location = "home.html"
 			return false
 		}
 		else{
@@ -98,6 +98,11 @@
 				return false
 			}
 		}
+	}
+
+	function registrasi(){
+		window.location = "registrasi.html"
+			return false
 	}
 </script>
 </html>
